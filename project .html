@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Async and Await function</h2>
+    <p>We can help Dhiya in a way that we can await the printing function till the calculation occurs using async and await keyword.</p>
+    <p>The async keyword returns the promise while the await keyword wait for the promise. 'Async' can be used without the 'await' function but await function is always used with the async function. </p>
+    <h1 id="print"></h1>
+    <script>
+        async function c(a,b,c,d){
+            let calc=await a+b/c*d;//here the calculation awaits 
+            display(calc);
+        }
+        function display(some){
+            document.getElementById("print").innerHTML=some;
+        }
+        c(78,80,90,79);
+        document.write("The result is shown.")//after the calculation the print statement is executed.
+    </script>
+</body>
+</html>
